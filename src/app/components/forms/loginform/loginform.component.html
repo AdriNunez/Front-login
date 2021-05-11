@@ -1,0 +1,32 @@
+<div class="center">
+
+<form [formGroup] = "formulario" (submit) = "login()">
+  <h1> <b>Log in </b></h1>
+<!--Campo de usuario-->
+<div class ="ancho">
+
+
+    <input formControlName = "email" matInput placeholder="Escribe tu email..." >
+    <mat-icon matSuffix>account_box</mat-icon>
+
+
+
+</div>
+
+<!--Campo de contraseña-->
+<div class ="ancho">
+
+
+    <input formControlName = "password" matInput  type="password" placeholder="Escribe tu contraseña..." >
+    <mat-icon matSuffix>password</mat-icon>
+
+</div>
+<!--Boton para iniciar sesion-->
+<div class= "loginbutton">
+<button mat-raised-button type="submit">Login</button>
+<!-- <button mat-raised-button (click)='logout()'>Cerrar sesión </button> -->
+</div>
+<h4> ¿Aún no tienes cuenta? <nav><a href="/register/">Regístrate</a></nav></h4>
+</form>
+
+</div>

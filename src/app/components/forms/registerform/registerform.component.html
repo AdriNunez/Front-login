@@ -1,0 +1,39 @@
+<div class="center">
+
+  <form [formGroup] = "formulario" (submit) = "register()">
+    <h1> <b>¡Regístrate! </b></h1>
+  <!--Campo de usuario-->
+
+  <div class ="ancho">
+
+
+    <input formControlName = "userName" matInput placeholder="Nombre de Usuario" >
+    <mat-icon matSuffix>account_circle</mat-icon>
+
+
+
+</div>
+  <div class ="ancho">
+
+
+      <input formControlName = "email" matInput placeholder="Email" >
+      <mat-icon matSuffix>email </mat-icon>
+
+
+
+  </div>
+
+  <!--Campo de contraseña-->
+  <div class ="ancho">
+
+
+      <input formControlName = "password" matInput  type="password" placeholder="Contraseña" >
+      <mat-icon matSuffix>password</mat-icon>
+
+  </div>
+  <!--Boton para iniciar sesion-->
+  <div class= "loginbutton">
+  <button mat-raised-button type="submit">Registrarse</button>
+
+
+  </div>
